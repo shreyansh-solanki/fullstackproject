@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/misc/NavBar.css" />
-    <title>FullStack Project</title>
-  </head>
-  <body>
-    <div id="nav-placeholder"></div>
-    <br /><br /><br /><br /><br />
-    <h1>Welcome to our Fullstack Project</h1>
-
+    <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script>
       $(function () {
         $("#nav-placeholder").load("./src/misc/NavBar.html");
       });
     </script>
+    <title>FullStack Project</title>
+  </head>
+  <body>
+    <div id="nav-placeholder" style="position: fixed; top: 0"></div>
+    <!-- <iframe
+      src="./src/misc/NavBar.html"
+      frameborder="0"
+      style="width: 100%"
+    ></iframe> -->
+    <div class="container">
+      <div class="main-section">
+        <div class="main-section-inner-content">
+          <h1>Our Community</h1>
+        </div>
+        <div class="main-section-signup">
+          <div class="main-section-institute-signup"></div>
+          <div class="main-section-public-signup"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
