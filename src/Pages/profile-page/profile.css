@@ -6,10 +6,10 @@
 
 .img-container
 {
-    height: 90vh;
-    background-image: linear-gradient(grey, skyblue);
+    /* height: 40vw; */
+    background-color: white;
     display: flex;
-    border-bottom: 2px solid rgb(43, 41, 41, .3);
+    /* border-bottom: 2px solid rgb(43, 41, 41, .3); */
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
@@ -23,9 +23,26 @@
     border-bottom: 1px solid black;
 }
 
+#links {
+    width: 850px;
+    height: 60px;
+    /* display: flex;
+    align-items: center; */
+    /* border: 1px solid pink; */
+    overflow: hidden;
+}
+
+#bac-img-color
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(black, white);
+}
+
 .bac-img{
-    height: 72%;
-    width: 1000px;
+    height: 29vw;
+    width: 950px;
     background: url("https://storage.opensea.io/files/de323e25e75ed197c80f7295fc83f2ff.svg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -47,4 +64,48 @@
     position: absolute;
     bottom: -20px;
     border: 4px solid white;
+}
+
+
+@media(max-width: 950px) {
+    .bac-img{
+        width: 100%;
+        height: 44vw;
+        transition: .3;
+    }
+    #user-name, #links{
+        width: 95%;
+    }
+}
+
+.img-container ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    
+}
+
+.img-container ul li {
+    display: inline-block;
+    /* border: 1px solid black; */
+    padding: 15px 20px;
+    margin: 2px 0px;
+
+}
+
+.img-container ul li:hover 
+{
+    /* border-bottom: 2px solid black; */
+    background-color: rgb(245, 239, 239);
+    border-radius: 10px;
+}
+
+.main-container{
+    height: 100vh;
+    background-color: whitesmoke;
+    border: 2px solid black;
 }
