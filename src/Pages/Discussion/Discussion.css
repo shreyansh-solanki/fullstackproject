@@ -5,20 +5,24 @@
 }
 
 .container {
-  margin: 70px 0 0 150px;
+  margin: 70px 0 0 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.content-total-answers {
+/* main-content */
+
+.main-content-total-answers {
   margin-top: 5px;
 }
 
-.content hr {
+.main-content hr {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 800px;
 }
 
-.content .content-total-answers .far {
+.main-content .content-total-answers .far {
   border-radius: 50%;
   width: 27px;
   height: 27px;
@@ -76,6 +80,7 @@
 
 button {
   margin-left: 37.3%;
+  margin-right: 69%;
   background: transparent;
   border: 1px solid rgba(88, 88, 85, 0.582);
   width: 150px;
@@ -89,15 +94,52 @@ button {
   margin-bottom: 30px;
 }
 
+/* query */
+
+.related-query {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  width: 320px;
+  float: left;
+}
+
+.related-query hr {
+  margin-top: 10px;
+}
+
+.related-query .questions {
+  margin-top: 20px;
+}
+
+.related-query .questions .question {
+  margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     margin: 70px 0 0 70px;
   }
-  .content hr {
-    width: 700px;
+  .main-content hr {
+    width: 600px;
   }
   .user {
-    width: 700px;
+    width: 600px;
+  }
+  .related-query {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .container {
+    margin: 70px 0 0 30px;
+  }
+  .main-content hr {
+    width: 470px;
+  }
+  .user {
+    width: 470px;
   }
 }
 
@@ -105,10 +147,13 @@ button {
   .container {
     margin: 70px 0 0 30px;
   }
-  .content hr {
+  .main-content hr {
     width: 90%;
   }
   .user {
     width: 90%;
+  }
+  .related-query {
+    padding: 0;
   }
 }
