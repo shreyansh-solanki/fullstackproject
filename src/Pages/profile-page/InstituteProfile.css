@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,23 +12,28 @@
 }
 
 .institute {
-  width: 760px;
+  border-radius: 10px;
 }
 
 .institute .institute-banner {
   width: 100%;
   height: 200px;
-  background-image: url(https://images.shiksha.com/mediadata/images/1584963121phpGhcf2P_g.jpg);
+  background-image: url(./../../misc/ExtraContent/istockphoto-1250056176-612x612.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
 }
 
 .institute .institute-img img {
-  position: relative;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-top: -60px;
   margin-left: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .institute .institute-information {
@@ -60,33 +65,45 @@
 }
 
 .institute .institute-contact-details {
-  background-color: slateblue;
-  width: 90px;
-  height: 30px;
   line-height: 30px;
   text-align: center;
-  border-radius: 10px;
-  margin-left: 90px;
+  margin-left: 30px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .institute .institute-information .institute-contact-details a {
   color: #fff;
+  background-color: rgba(6, 99, 86, 0.747);
+  width: 90px;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.institute-contact-details:hover {
+  transform: scale(1.1);
 }
 
 .institute .institute-data-section {
   margin-left: 20px;
   margin-top: 10px;
   font-size: 14px;
+  display: flex;
+}
+
+.institute .institute-data-section div {
+  margin-right: 50px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .institute .institute-data-section a {
   color: rgba(0, 0, 0, 0.5);
-  margin-right: 20px;
 }
 
 .institute .institute-data-section a:hover {
   color: rgba(12, 92, 38, 0.945);
-  margin-right: 20px;
+}
+.institute .institute-data-section div:hover {
+  transform: scale(1.2);
 }
 
 .suggestion {
@@ -150,14 +167,92 @@
   margin-left: 80px;
   margin-top: 10px;
 }
+
+.posts {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.posts .post-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.post {
+  width: 100%;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px grey;
+  margin-bottom: 40px;
+}
+
+.posts .post .institute-profile-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 5px 1px grey;
+}
+
+.posts .post .institute-name {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 1.4em;
+  width: 150px;
+}
+
+.posts .post .institute-followers {
+  margin-left: 20px;
+  font-size: 0.9em;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 3px;
+}
+
+.posts .post .post-time {
+  margin-left: 20px;
+  margin-top: 3px;
+  font-size: 0.9em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.posts .post .institute-profile-information {
+  display: inline-flex;
+}
+
+.posts .post .post-description {
+  margin-top: 80px;
+  margin-left: -215px;
+}
+
+.posts .post .post-image {
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+  height: 78%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.posts .post:nth-child(2) .post-image {
+  background-image: url(./../../misc/ExtraContent/philippe-oursel-ZopoSyTT_GM-unsplash.jpg);
+}
+
+.posts .post:nth-child(3) .post-image {
+  background-image: url(./../../misc/ExtraContent/doruk-bayram-gs3duh5iqkw-unsplash.jpg);
+}
+
 @media only screen and (min-width: 1200px) {
-  .institute hr {
-    width: 620px;
+  .institute .institute-hr {
+    width: 760px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .container {
+  .content {
     display: flex;
     justify-content: center;
   }
@@ -169,7 +264,7 @@
 }
 
 @media only screen and (max-width: 1010px) {
-  .container {
+  .content {
     display: flex;
     justify-content: center;
   }
@@ -180,8 +275,8 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
-  .container {
+@media only screen and (max-width: 865px) {
+  .content {
     display: flex;
     justify-content: center;
   }
