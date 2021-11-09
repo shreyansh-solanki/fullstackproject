@@ -38,7 +38,6 @@
 
 .institute .institute-information {
   margin-top: 30px;
-  margin-left: 20px;
   width: 100%;
 }
 
@@ -67,7 +66,7 @@
 .institute .institute-contact-details {
   line-height: 30px;
   text-align: center;
-  margin-left: 30px;
+  margin-left: 25px;
   transition: transform 0.4s ease-in-out;
 }
 
@@ -76,7 +75,7 @@
   background-color: rgba(6, 99, 86, 0.747);
   width: 90px;
   height: 30px;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 10px;
 }
 .institute-contact-details:hover {
