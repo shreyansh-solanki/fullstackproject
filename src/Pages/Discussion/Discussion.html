@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Discussion.css" />
-    <link rel="stylesheet" href="./../../misc/NavBar.css" />
+    <link rel="stylesheet" href="./../../misc/NavigationBar/NavBar.css" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script>
       $(function () {
-        $("#nav-placeholder").load("./../../misc/NavBar.html");
+        $("#nav-placeholder").load("./../../misc/NavigationBar/NavBar.html");
       });
     </script>
     <link
@@ -23,7 +23,7 @@
   <body>
     <div id="nav-placeholder" style="position: fixed; top: 0"></div>
     <div class="container">
-      <div class="content">
+      <div class="main-content">
         <div class="content-question">
           <h2>What is Fullstack Development?</h2>
         </div>
@@ -181,6 +181,24 @@
             </span>
           </div>
           <button onclick="myFunction()" id="btn">Continue Reading</button>
+        </div>
+      </div>
+      <div class="related-query">
+        <h4>Related Questions</h4>
+        <hr noshade="" />
+        <div class="questions">
+          <div class="question">
+            <a href="">Who is FullStack developer?</a>
+          </div>
+          <div class="question">
+            <a href="">How to become full-stack developer?</a>
+          </div>
+          <div class="question">
+            <a href="">What does FullStack developer mean?</a>
+          </div>
+          <div class="question">
+            <a href="">What are the requirements for a FullStack developer?</a>
+          </div>
         </div>
       </div>
     </div>
