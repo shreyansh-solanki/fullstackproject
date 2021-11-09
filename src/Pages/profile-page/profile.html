@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
 
-    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./profile.css" />
 
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="main-container">
-        <div class="img-container">
-
-            <div id="bac-img-color">
-                <div class="bac-img">
-                    <div class="img">
-                    </div>
-                </div>
-            </div>
-
-            
-            <div id="user-name">
-                <h1>Lakhan Nishad</h1>
-            </div>
-
-            <div id="links">
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">info</a></li>
-                    <li><a href="#">friends</a></li>
-                    <li><a href="#">post</a></li>
-                    <li><a href="#">answer</a></li>
-                    <li><a href="#">doubt</a></li>
-                </ul>
-            </div>
-
-            
-            
+      <div class="img-container">
+        <div id="bac-img-color">
+          <div class="bac-img">
+            <div class="img"></div>
+          </div>
         </div>
+
+        <div id="user-name">
+          <h1>Lakhan Nishad</h1>
+        </div>
+
+        <div id="links">
+          <ul>
+            <li class="about"><a href="#">about</a></li>
+            <li class="info"><a href="#">info</a></li>
+            <li class="friends"><a href="#">friends</a></li>
+            <li class="post"><a href="#">post</a></li>
+            <li class="answer"><a href="#">answer</a></li>
+            <li class="doubt"><a href="#">doubt</a></li>
+            <li class="more">
+              <a href="#">more<i class="fas fa-caret-down"></i></a>
+
+              <div class="more-list">
+                <ul>
+                  <li class="m-about"><a href="#">about</a></li>
+                  <li class="m-info"><a href="#">info</a></li>
+                  <li class="m-friends"><a href="#">friends</a></li>
+                  <li class="m-post"><a href="#">post</a></li>
+                  <li class="m-answer"><a href="#">answer</a></li>
+                  <li class="m-doubt"><a href="#">doubt</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

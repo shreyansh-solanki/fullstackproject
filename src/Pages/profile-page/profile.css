@@ -2,6 +2,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+
 }
 
 .img-container
@@ -29,7 +31,21 @@
     /* display: flex;
     align-items: center; */
     /* border: 1px solid pink; */
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.more-list
+{
+    position: absolute;
+    background-color: white;
+    padding: 2px 80px 10px 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+.more:hover .more-list
+{
+    display: block;
 }
 
 #bac-img-color
@@ -92,7 +108,7 @@ a {
 .img-container ul li {
     display: inline-block;
     /* border: 1px solid black; */
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: 2px 0px;
 
 }
@@ -109,3 +125,81 @@ a {
     background-color: whitesmoke;
     border: 2px solid black;
 }
+
+.more-list ul li{
+    display: block;
+    padding: 5px !important;
+    margin: 0px !important;
+}
+.more-list ul li a
+{
+    font-size: 20px;
+    
+}
+
+.m-about, .m-info, .m-friends, .m-post, .m-answer, .m-doubt
+{
+    display: none !important;
+}
+
+@media (max-width:791px) {
+    .doubt
+    {
+        display: none !important;
+    }
+    .m-doubt
+    {
+        display: block !important;
+    }
+}
+@media (max-width:675px) {
+    .answer
+    {
+        display: none !important;
+    }
+    .m-answer
+    {
+        display: block !important;
+    }
+}
+@media (max-width:549px) {
+    .post
+    {
+        display: none !important;
+    }
+    .m-post
+    {
+        display: block !important;
+    }
+}
+@media (max-width:453px) {
+    .friends
+    {
+        display: none !important;
+    }
+    .m-friends
+    {
+        display: block !important;
+    }
+}
+@media (max-width:331px) {
+    .info
+    {
+        display: none !important;
+    }
+    .m-info
+    {
+        display: block !important;
+    }
+}
+@media (max-width:235px) {
+    .about
+    {
+        display: none !important;
+    }
+    .m-about
+    {
+        display: block !important;
+    }
+}
+
