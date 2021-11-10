@@ -4,7 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./OtherUserProfile.css" />
+    <link rel="stylesheet" href="./../../misc/NavigationBar/NavBar.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("./../../misc/NavigationBar/NavBar.html");
+      });
+    </script>
+    <title></title>
   </head>
-  <body></body>
+  <body>
+    <div id="nav-placeholder" style="position: fixed; top: 0"></div>
+    <div class="container">
+      <div class="content">
+        <div class="profile-banner"></div>
+        <div class="profile-content">
+          <div class="profile-data">
+            <div class="profile-image"></div>
+            <div class="profile-name">Any Name</div>
+            <div class="profile-decription">
+              20 posts &nbsp; &nbsp;30 Answers
+              <div class="profile-description-about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, architecto?
+              </div>
+            </div>
+          </div>
+          <div class="posts">
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+            <div class="post"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
