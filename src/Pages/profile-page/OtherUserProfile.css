@@ -54,6 +54,7 @@
   background-color: red;
   border-radius: 50%;
   margin-left: 28px;
+  background-image: url(./../../misc/ExtraContent/photo-1601158935942-52255782d322.avif);
 }
 
 .content .profile-content .profile-data .profile-name {
@@ -90,6 +91,7 @@
   margin: 0px 0px 10px 0px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 2px rgba(51, 51, 51, 0.219);
+  cursor: pointer;
 }
 .profile-content .posts .post:nth-child(1) {
   background-image: url(./../../misc/ExtraContent/jr-korpa-7NoLliK6ntc-unsplash.jpg);

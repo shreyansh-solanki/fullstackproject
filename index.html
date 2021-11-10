@@ -6,16 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/misc/NavigationBar/NavBar.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script>
       $(function () {
         $("#nav-placeholder").load("./src/misc/NavigationBar/NavBar.html");
       });
-    </script>
+    </script> -->
     <title>FullStack Project</title>
   </head>
   <body>
-    <div id="nav-placeholder" style="position: fixed; top: 0"></div>
+    <!-- navbar  -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">Project</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#account-menu" class="nav-link">Our Community</a>
+          </li>
+          <li class="nav-item">
+            <input type="text" placeholder="Search..." class="nav-link" />
+          </li>
+          <li class="nav-item account">
+            <a href="#"
+              ><i class="fal fa-user-circle" title="Login/Signup"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+
     <section class="showcase-area" id="showcase">
       <div class="showcase-container">
         <h1 class="main-title" id="home">Try Right Things</h1>
@@ -54,7 +108,7 @@
             <div class="img-content">
               <h3>Already have Account</h3>
               <a
-                href="./src/Pages/SignIn.html"
+                href="./src/Pages/SignIn2.html"
                 class="btn btn-primary"
                 target="blank"
                 >Login</a
@@ -82,7 +136,7 @@
             <div class="img-content">
               <h3>Public Login</h3>
               <a
-                href="./src/Pages/SignIn.html"
+                href="./src/Pages/SignIn2.html"
                 class="btn btn-primary"
                 target="blank"
                 >SignUp</a
